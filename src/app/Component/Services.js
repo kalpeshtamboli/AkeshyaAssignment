@@ -6,7 +6,7 @@ const Services = () => {
       img: "/dribble-big-logo.png",
       title: "Design",
       content:
-        "Design Our web design services can assist you in reclaiming your company's online image. Your business will flourish on the Internet thanks to the combination of style and technology we provide, as well as our experience.",
+        "Design Our web design services can assist you in reclaiming your company is online image. Your business will flourish on the Internet thanks to the combination of style and technology we provide, as well as our experience.",
     },
     {
       img: "/google-docs.png",
@@ -18,7 +18,7 @@ const Services = () => {
       img: "/globe-earth.png",
       title: "Marketing",
       content:
-        "A beautiful website is the foundation of effective marketing. Our customers achieve success where it counts—in the real world—by combining our proven approach with our passion for improving conversions and increasing ROI.",
+        "A beautiful website is the foundation of effective marketing. Our customers achieve success where it counts in the real world—by combining our proven approach with our passion for improving conversions and increasing ROI.",
     },
     {
       img: "/dashboard.png",

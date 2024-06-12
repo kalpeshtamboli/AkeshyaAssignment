@@ -28,7 +28,9 @@ const Process = () => {
     <div data-aos="fade-up">
       <div className="flex items-center justify-center gap-x-2 mt-24">
         <div className="w-16 h-[2.5px] bg-[#14279b] rounded-full" />
-        <h1 className=" text-2xl lg:text-3xl font-bold uppercase">our process</h1>
+        <h1 className=" text-2xl lg:text-3xl font-bold uppercase">
+          our process
+        </h1>
         <div className="w-16 h-[2.5px] bg-[#14279b] rounded-full" />
       </div>
 
@@ -40,7 +42,12 @@ const Process = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-10  lg:grid-cols-2 lg:gap-x-10 gap-y-12 lg:gap-y-32 mt-16 px-5 md:px-14 lg:px-28">
         {processData?.map((data, index) => {
           return (
-            <Card classes={"shadow-md py-10 px-5 bg-[#f6f6f6] hover:bg-[#14279b] rounded-lg hover:text-white ease-in duration-300"}>
+            <Card
+              classes={
+                "shadow-md py-10 px-5 bg-[#f6f6f6] hover:bg-[#14279b] rounded-lg hover:text-white ease-in duration-300"
+              }
+              key={index}
+            >
               <h2 className="font-bold text-center text-xl">{data?.title}</h2>
               <p className="pt-5">{data?.content}</p>
             </Card>

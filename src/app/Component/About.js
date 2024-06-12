@@ -77,10 +77,10 @@ const About = () => {
         </div>
 
         <div className="text-base md:text-lg lg:text-lg flex flex-col px-5 lg:px-0 pt-10 lg:pt-0  lg:w-3/4">
-          We're professional, but we're also friendly, and we'll always pay
+          We are professional, but we are also friendly, and we will always pay
           attention to your concerns. We expect to work with innovative people
           that have an open mind and are dedicated to making every idea a
-          reality. We want to hear from you if you're interested in SEO, have
+          reality. We want to hear from you if you are interested in SEO, have
           Web Development ideas, or require a graphic designer who can match
           your goals.
           <button className=" border-2 w-32 lg:w-52 text-[#14279b] font-medium border-[#14279b] mt-10 py-2 rounded-full">
