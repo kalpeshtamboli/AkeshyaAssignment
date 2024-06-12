@@ -21,10 +21,11 @@ const HamburgerMenu = ({ navList }) => {
   }, []);
 
   return (
-    <div className="flex  justify-end md:hidden">
+    <div className="flex z-10 relative justify-end">
       <button
         onClick={toggleMenu}
-        className="inline-flex items-center justify-center p-2 text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500"
+        className="p-2 text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500"
+        aria-label="Toggle menu"
       >
         <svg
           className="w-6 h-6"
@@ -51,32 +52,30 @@ const HamburgerMenu = ({ navList }) => {
         </svg>
       </button>
       {isOpen && (
-        <div className="fixed inset-0  bg-[white] bg-opacity-100">
-          <div className="flex justify-end">
-           
-
+        <div className="fixed inset-0 bg-white bg-opacity-100 z-20">
+          <div className="flex justify-end  p-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="2"
               stroke="currentColor"
-              class="size-6 mr-6"
+              className="w-6 h-6 text-gray-500 cursor-pointer"
               onClick={toggleMenu}
-              
+              aria-label="Close menu"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18 18 6M6 6l12 12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
               />
             </svg>
           </div>
-          <ul className="flex  flex-col gap-5 text-sm">
+          <ul className="flex flex-col gap-5 text-sm mt-5">
             {navList.map((item, index) => (
               <li
                 key={index}
-                className="flex justify-start pl-5 gap-5 font-semibold  tracking-wide"
+                className="flex justify-start pl-5 gap-5 font-semibold tracking-wide"
               >
                 <span
                   className={` ${
@@ -85,12 +84,11 @@ const HamburgerMenu = ({ navList }) => {
                 >
                   {item}
                 </span>
-                
               </li>
             ))}
-            <li className="">
-              <button className="bg-[#14279b] ml-5   py-2 rounded-full  font-semibold text-white  w-80">
-                CONTACT Us
+            <li>
+              <button className="bg-[#14279b] ml-5 py-2 rounded-full font-semibold text-white w-80">
+                CONTACT US
               </button>
             </li>
           </ul>

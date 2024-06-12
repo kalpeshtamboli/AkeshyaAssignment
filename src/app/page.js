@@ -22,7 +22,7 @@ export default function Home() {
         <Navbar />
       </div>
 
-      <div className="block lg:hidden">
+      <div className="block md:hidden lg:hidden">
         <HamburgerMenu navList={["HOME", "ABOUT", "SERVICES"]} />
       </div>
       <Homepage />
